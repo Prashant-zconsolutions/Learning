@@ -20,6 +20,8 @@ public class String1 {
         System.out.println(s2.charAt(1));
         // check string length
         System.out.println(s2.length());
+        // check given string is present or not
+
 
 
         int a = 10;
@@ -29,6 +31,7 @@ public class String1 {
 
 
         String s1="Java is a programming language. Java is a Platform Independent.";
+        System.out.println(s1.contains("language"));
         String replaceString=s1.replace("Java","Kava");//replaces all occurrences of "Java" to "Kava"
         // replace method is used to replaces all occurrence of first sequence of character with second sequence of character.
         System.out.println(replaceString);
@@ -36,6 +39,10 @@ public class String1 {
         String s4 = "Pooja is a Doctor";
         String st5 = s4.replaceFirst("Doctor","Software Engineer");
         System.out.println(st5);
+
+
+
+
 
 
 
