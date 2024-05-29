@@ -1,0 +1,45 @@
+--  INSERT INTO public."Employee"(
+--  	emp_name, emp_age, emp_address, emp_salary)
+--  	VALUES ('Vishal', 21, 'Jalgaon', 10000);
+
+
+-- delete from public."Employee"
+-- where emp_id = 10;
+
+-- select *from public."Employee";
+
+-- 	update public."Employee"
+-- 	set emp_name = 'Mahindra',emp_age = 27
+-- 	where emp_id = 11;
+
+-- create new employee2 table
+-- create table public."Employee2"
+-- as
+-- select * from public."Employee" where 1=2;
+
+
+INSERT INTO public."employee"(emp_name, emp_age, emp_address, emp_salary)
+VALUES ('Ravi', 25, 'Nagar', 30000);
+
+alter table public."Employee2"
+rename to employee2;
+
+select * from employee
+
+
+CREATE TABLE IF NOT EXISTS public.student3
+(
+    stu_id serial NOT NULL PRIMARY KEY,
+    stu_name char(30) NOT NULL
+)
+
+
+INSERT INTO student3 (stu_name) values('ramesh'),('ganesh')
+
+select * from student3
+
+
+
+
+
+
