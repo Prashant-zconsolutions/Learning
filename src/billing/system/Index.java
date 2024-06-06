@@ -36,13 +36,15 @@ public class Index {
         {
 
             Rate rate = rateList.get(i);
+
+            // get max units from rate
             int maxUnit = i==rateList.size()-1 ?
                     unit :
                     rate.getMax() - rate.getMin();
 
+
             if(unit > maxUnit)
             {
-                System.out.println(unit);
                 billPrice += rate.getPrice() * maxUnit;
                 unit = unit - maxUnit;
             }
@@ -50,8 +52,6 @@ public class Index {
                 billPrice += unit * rate.getPrice();
                 break;
             }
-
-
 
         }
 
