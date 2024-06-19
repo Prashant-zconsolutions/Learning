@@ -15,9 +15,7 @@ public class LambdaExpressionEx2 {
         list.add("irfan");
         list.add("jai");
 
-        list.forEach(
-                (n)->System.out.println(n)
-        );
+        list.forEach(n->System.out.println(n));
 
 
 

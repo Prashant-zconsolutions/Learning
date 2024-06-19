@@ -1,9 +1,10 @@
 package billing.system;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Index {
-    public static int unit =1000;
+    public static int unit =100;
 
 
     public static List<Rate> getList() {
@@ -17,16 +18,8 @@ public class Index {
 
     public static void main(String[] args) {
 
-        // 396 + 50 +
-
         List<Rate> rateList = getList();
 
-//        Collections.sort(rateList, new Comparator<Rate>() {
-//            @Override
-//            public int compare(Rate o1, Rate o2) {
-//                return o1.getMin().compareTo(o2.getMin());
-//            }
-//        });
 
         rateList.sort((o1, o2) -> o1.getMin().compareTo(o2.getMin()));
 
